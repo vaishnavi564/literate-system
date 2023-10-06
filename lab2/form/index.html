@@ -1,0 +1,37 @@
+<html lang="en">
+    
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register an Employee Form</title>
+    <link rel="stylesheet" href="style.css">
+</head> 
+<body>
+    <h1>Employee Registration Form</h1>
+    <label for="name">Name:</label>
+    <input type="text" id="name" placeholder="Enter your name" class="name" autofocus="autofocus" required="required"><br/>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" placeholder="Enter your mail id" class="mail" autofocus="autofocus" required="required" ><br/>
+    
+    <label for="dateOfBirth">Date of Birth:</label><br/> 
+    <input type="date" class="name" id="dateOfBirth" required />*<br/> 
+
+    <label for="Age">Age:</label>
+    <input type="number" id="name" placeholder="Enter your age" class="name" size="6" min="18" max="120" step="1" value="21" ><br/>
+
+    <label for="phone">Phone:</label><br/> 
+    <input type="text" class="name" id="phone" pattern="[0-9]{3}-[0-9]{3}- [0-9]{4}" placeholder="XXX-XXX-XXXX" required />*<br/>
+    
+    <label for="rating">Years of Experience:</label><br/> 
+    <input type="range" name="rating" id="rating" min="0" max="100" step="1" value="0"onchange="displayRating(this);"/> 
+    <span id="ratingValue">0</span><br/> 
+    
+    <a href="thankYou.html"><input type="submit" value="Register" class="register"/> 
+        <p>Fields marked * are required.</p></a>
+    <form action="thankYou.html"> 
+    </form> 
+    <script src="index.js"></script> 
+</body>
+</html>
